@@ -1,0 +1,5 @@
+---
+  - name: run basic configurations for Linux
+    hosts: all
+    roles:
+      - { role: linux-auto-update, tags: 'update' }

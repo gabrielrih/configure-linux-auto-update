@@ -1,0 +1,16 @@
+---
+  - name: create temp folder
+    file:
+      path: "{{ localTempFolder }}"
+      recurse: yes
+      state: directory
+  - name: Download and extract release
+    unarchive:
+      src: "https://github.com/gabrielrih/auto-update-so-linux/archive/refs/tags/{{ release.version }}.tar.gz"
+      dest: "{{ localTempFolder }}"
+      mode: 0755
+      remote_src: yes
+  - name: Run script to configure auto update
+    become: true
+    command:
+      cmd: "{{ localTempFolder}}/auto-update-so-linux-{{ release.version }}/configure.sh"

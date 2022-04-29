@@ -1,0 +1,4 @@
+---
+  release:
+    version: 1.0.1
+  localTempFolder: "/tmp/auto-update"
