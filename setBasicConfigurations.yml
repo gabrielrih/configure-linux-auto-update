@@ -2,5 +2,5 @@
   - name: set basic configurations in Linux machine(s)
     hosts: hosts
     roles:
-      - { role: install-packages, tags: 'install' }
+      - { role: install-common-packages, tags: 'install' }
       - { role: linux-auto-update, tags: 'update' }
