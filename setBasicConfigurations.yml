@@ -1,5 +1,5 @@
 ---
-  - name: run basic configurations for Linux
+  - name: set basic configurations in Linux machine(s)
     hosts: hosts
     roles:
       - { role: install-packages, tags: 'install' }

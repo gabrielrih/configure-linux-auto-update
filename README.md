@@ -19,10 +19,10 @@ ansible-vault encrypt_string "putHereTheContentToBeEncrypted" --vault-id crypt@.
 vault_password_file = ./vault/.key
 ```
 
-# Run it this way
+# Running the playbook
 All the extra informations must be set in ansible.cfg, so to call the playbook you just must run this command:
 ```
-ansible-playbook basicConfiguration.yml
+ansible-playbook setBasicConfigurations.yml
 ```
 
 # Ansible references
