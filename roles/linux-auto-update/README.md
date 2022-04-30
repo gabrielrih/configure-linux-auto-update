@@ -32,4 +32,4 @@ Free
 Author Information
 ------------------
 
-Gabriel Richter <gabrielrih@gmail.com>
+Gabriel Richter <<gabrielrih@gmail.com>>
