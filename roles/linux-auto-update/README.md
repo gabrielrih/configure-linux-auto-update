@@ -17,8 +17,6 @@ The most important variable in this role is the version of the package which con
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
     - hosts: servers
       become: true
       roles:
