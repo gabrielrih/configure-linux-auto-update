@@ -1,18 +1,23 @@
-# How to set it up the environment
+# How to set up the environment
 - Comment this line in ansible.cfg file:
 ```
-vault_password_file = ./vault/.key
+#vault_password_file = ./vault/.key
 ```
 - Now you need to generate a file to be used as vault id.
 ```
 mkdir ./vault
 echo "put some content here" > ./vault/.key
 ```
-- Generate a encrypt a value using be key file created above (run this command to encrypt each value)
+- Encrypt a sensitive data (pass and user) using the key file created above (run this command to encrypt each value)
 ```
 ansible-vault encrypt_string "putHereTheContentToBeEncrypted" --vault-id crypt@./vault/.key
 ```
-- To ended, just copy the encrypt value and replace it in hosts.yml.
+- Copy the encrypt value and replace it in hosts.yml file.
+
+- Uncomment the vault_password_file line in ansible.cfg file.
+```
+vault_password_file = ./vault/.key
+```
 
 # Run it this way
 All the extra informations must be set in ansible.cfg, so to call the playbook you just must run this command:
