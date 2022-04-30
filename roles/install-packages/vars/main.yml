@@ -1,11 +1,11 @@
 ---
-packages:
-  - vim
-  - nano
-  - curl
-  - wget
-  - git
-  - openssl
-  - python3
-  - nmap
-  - tcpdump
+  packages:
+    - vim
+    - nano
+    - curl
+    - wget
+    - git
+    - openssl
+    - python3
+    - nmap
+    - tcpdump
