@@ -26,6 +26,6 @@ ansible-playbook basicConfiguration.yml
 ```
 
 # Ansible references
-[Encrypting content](https://docs.ansible.com/ansible/latest/user_guide/vault.html)
-[Configuration file](https://docs.ansible.com/ansible/2.4/intro_configuration.html#vault-password-file)
-[Ansible course](https://ambevtech.udemy.com/course/ultimate-ansible-bootcamp)
+- [Encrypting content](https://docs.ansible.com/ansible/latest/user_guide/vault.html)
+- [Configuration file](https://docs.ansible.com/ansible/2.4/intro_configuration.html#vault-password-file)
+- [Ansible course](https://ambevtech.udemy.com/course/ultimate-ansible-bootcamp)
