@@ -12,5 +12,6 @@
       remote_src: yes
   - name: Run script to configure auto update
     become: true
-    command:
-      cmd: "{{ localTempFolder}}/auto-update-so-linux-{{ release.version }}/configure.sh"
+    shell:
+      chdir: "{{ localTempFolder}}/auto-update-so-linux-{{ release.version }}"
+      cmd: "./configure.sh"
