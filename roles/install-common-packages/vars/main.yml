@@ -9,3 +9,5 @@
     - python3
     - nmap
     - tcpdump
+    - tree
+    - htop
