@@ -7,6 +7,5 @@
   - name: install basic packages
     become: true
     package:
-      name: "{{ item }}"
+      name: "{{ packages }}"
       state: latest
-    with_items: "{{ packages }}"
